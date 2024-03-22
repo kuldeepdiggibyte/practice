@@ -1,6 +1,6 @@
 import pyspark
 import pandas as pd
-read = pd.read_csv('expirence.csv')
+read = pd.read_csv('../expirence.csv')
 print(type(read))
 print(read)
 from pyspark.sql import SparkSession
