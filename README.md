@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DataFrame and RDD Operations</title>
+ 
 </head>
 <body>
   <h1>For DataFrame:</h1>
@@ -19,6 +19,7 @@
   <h2>Manipulated DataFrame:</h2>
   <ul>
     <li>Employed <code>withColumn</code> to add or replace a column in the DataFrame with a new column.</li>
+    <li>Renamed columns using <code>withColumnRenamed</code> to change column names in the DataFrame.</li>
   </ul>
 
   <h1>For RDD:</h1>
@@ -36,6 +37,16 @@
   <ul>
     <li>Utilized <code>mapPartitions</code> to apply a function to each partition of the RDD.</li>
     <li>Leveraged <code>glom</code> within <code>mapPartitions</code> to gather all elements of each partition into a single list.</li>
+  </ul>
+  <h2>Worked with RDD actions:</h2>
+  <ul>
+    <li>Used <code>count()</code> action to count the number of elements in the RDD.</li>
+    <li>Applied <code>min()</code> action to find the minimum element in the RDD.</li>
+    <li>Utilized <code>max()</code> action to find the maximum element in the RDD.</li>
+    <li>Used <code>mean()</code> action to calculate the mean (average) of the elements in the RDD.</li>
+    <li>Applied <code>countByKey()</code> action to count the number of occurrences of each key in an RDD of key-value pairs.</li>
+    <li>Utilized <code>countByValue()</code> action to count the number of occurrences of each unique value in the RDD.</li>
+    <li>Used <code>fold()</code> action to aggregate the elements of the RDD using a given associative function and a neutral "zero value".</li>
   </ul>
 </body>
 </html>
