@@ -20,6 +20,7 @@
   <ul>
     <li>Employed <code>withColumn</code> to add or replace a column in the DataFrame with a new column.</li>
     <li>Renamed columns using <code>withColumnRenamed</code> to change column names in the DataFrame.</li>
+    <li>Used <code>select</code> to select specific columns from the DataFrame.</li>
   </ul>
 
   <h1>For RDD:</h1>
@@ -48,5 +49,17 @@
     <li>Utilized <code>countByValue()</code> action to count the number of occurrences of each unique value in the RDD.</li>
     <li>Used <code>fold()</code> action to aggregate the elements of the RDD using a given associative function and a neutral "zero value".</li>
   </ul>
+  <h2>Worked with DataFrame actions:</h2>
+  <ul>
+    <li>Used <code>collect()</code> to retrieve all elements of the DataFrame to the driver program.</li>
+    <li>Applied <code>show()</code> to display the contents of the DataFrame in a tabular format.</li>
+    <li>Utilized <code>take()</code> to return an array with the first n elements of the DataFrame.</li>
+    <li>Used <code>head()</code> to return the first element of the DataFrame.</li>
+  </ul>
+  <h2>Difference between collect, show, take, head:</h2>
+  <p><strong>collect():</strong> Retrieves all elements of the DataFrame to the driver program. It should be used cautiously as it collects all data to the driver and may cause out-of-memory errors if the dataset is large.</p>
+  <p><strong>show():</strong> Displays the contents of the DataFrame in a tabular format, typically limited to a default number of rows. It provides a more human-readable view of the data and is suitable for exploration and visualization.</p>
+  <p><strong>take():</strong> Returns an array with the first n elements of the DataFrame. It can be useful for quickly inspecting a subset of the data.</p>
+  <p><strong>head():</strong> Returns the first element of the DataFrame. It is often used to quickly peek at the structure of the data or to check the first record.</p>
 </body>
 </html>
