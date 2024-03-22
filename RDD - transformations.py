@@ -21,7 +21,7 @@ print('values x_flatMap_rdd {0}'.format(x_flatMap_rdd.collect()))
 print('values of y_flatmap: {0}'.format(y_flatMap.collect()))
 
 #MAP_PARTITION
-x = sc.parallelize([1,2,3,4,5,6,7,8,9,10],2)
+x = sc.parallelize([1,2,3,4,5,6,7,8,9,10],4)
 def f(iterator): yield  sum(iterator)
 y = x.mapPartitions(f)
 #glom() flatten element on the same partition
