@@ -6,6 +6,14 @@
  
 </head>
 <body>
+  <h1>Databricks Utilities:</h1>
+  <h2>Widgets:</h2>
+  <p>Used <code>dbutils.widgets</code> to create interactive widgets for parameterizing notebooks.</p>
+  <h2>Credentials:</h2>
+  <p>Accessed and managed secrets, tokens, and other sensitive information securely using <code>dbutils.credentials</code>.</p>
+  <h2>Data Summarization:</h2>
+  <p>Summarized data efficiently using <code>dbutils.data.summarize</code> and <code>dbutils.data.summarize(precise=True)</code> for detailed summaries.</p>
+
   <h1>For DataFrame:</h1>
   <h2>Created a DataFrame:</h2>
   <ul>
@@ -61,5 +69,22 @@
   <p><strong>show():</strong> Displays the contents of the DataFrame in a tabular format, typically limited to a default number of rows. It provides a more human-readable view of the data and is suitable for exploration and visualization.</p>
   <p><strong>take():</strong> Returns an array with the first n elements of the DataFrame. It can be useful for quickly inspecting a subset of the data.</p>
   <p><strong>head():</strong> Returns the first element of the DataFrame. It is often used to quickly peek at the structure of the data or to check the first record.</p>
+
+  <h1>Read and Write Operations:</h1>
+  <h2>JSON:</h2>
+  <ul>
+    <li>Read JSON files using <code>spark.read.json()</code>.</li>
+    <li>Write DataFrame to JSON using <code>df.write.json()</code> with options for mode (overwrite, append, etc.).</li>
+  </ul>
+  <h2>CSV:</h2>
+  <ul>
+    <li>Read CSV files using <code>spark.read.csv()</code>.</li>
+    <li>Write DataFrame to CSV using <code>df.write.csv()</code> with options for mode (overwrite, append, etc.).</li>
+  </ul>
+  <h2>Parquet:</h2>
+  <ul>
+    <li>Read Parquet files using <code>spark.read.parquet()</code>.</li>
+    <li>Write DataFrame to Parquet using <code>df.write.parquet()</code> with options for mode (overwrite, append, etc.).</li>
+  </ul>
 </body>
 </html>
